@@ -121,7 +121,7 @@ class tempgraph extends StatelessWidget {
                                     value >= 0 &&
                                     value < timestampList.length) {
                                   return Text(
-                                    '${timestampList[value.toInt()].hour}:${timestampList[value.toInt()].minute}',
+                                    '${timestampList[value.toInt()].hour}:${timestampList[value.toInt()].minute.toString().padLeft(2, '0')}',
                                     style: style,
                                   );
                                 } else {
